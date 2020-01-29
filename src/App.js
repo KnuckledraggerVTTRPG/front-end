@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions/test.action';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions/test.action';
 
 export default function App() {
-  const counter = useSelector(state => state.counter.value);
+  const counterValue = useSelector(({ counter }) => counter.value);
   const dispatch = useDispatch();
   return (
     <Router>
       <div>
-        <h1>Counter: {counter}</h1>
+        <h1>Counter: {counterValue}</h1>
         <button
           type="button"
           onClick={() => dispatch({ type: INCREMENT_COUNTER })}
