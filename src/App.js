@@ -6,7 +6,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 
 export default function App() {
-  const counterValue = useSelector(({ counter }) => counter.value);
+  const counterValue = useSelector(({ counter }) => counter);
   const dispatch = useDispatch();
   return (
     <Router>
