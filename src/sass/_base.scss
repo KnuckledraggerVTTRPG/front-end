@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Durian';
+  src: url(fonts/Durian.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chlorinar';
+  src: url(fonts/Chlorinar.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'HighwayToHell';
+  src: url(fonts/HighwayToHell.otf) format('opentype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.root-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}

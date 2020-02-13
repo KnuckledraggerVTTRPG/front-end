@@ -1,49 +1,43 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './actions/test.action';
-import Home from './components/home/Home';
-import About from './components/about/About';
 
 export default function App() {
-  const counterValue = useSelector(({ counter }) => counter);
-  const dispatch = useDispatch();
   return (
-    <Router>
-      <div>
-        <h1>Counter: {counterValue}</h1>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: INCREMENT_COUNTER })}
-        >
-          Increment Counter
-        </button>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: DECREMENT_COUNTER })}
-        >
-          Decrement Counter
-        </button>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
+    <div>
+      <nav className="nav">
+        <div className="nav--item">
+          <h2 className="heading-2 center">Kickstarter</h2>
+        </div>
+        <div className="nav--item">
+          <h2 className="heading-2 center">Wiki</h2>
+        </div>
+        <div className="nav--item">
+          <h2 className="heading-2 center">Play</h2>
+        </div>
+      </nav>
+      <div className="root-container">
+        <div className="logo-1">Logo</div>
+        <h1 className="heading-1">
+          KnuckledraggerRPG<small>Welcome to Planet</small>
+        </h1>
+        <form className="form">
+          <label htmlFor="username">
+            <input className="form--input" name="username" id="username" />
+            Username
+          </label>
 
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+          <label htmlFor="password">
+            <input className="form--input" name="password" id="password" />
+            Password
+          </label>
+
+          <a href="#" className="link-1">
+            Create account
+          </a>
+          <a href="#" className="link-1">
+            Lost password
+          </a>
+        </form>
       </div>
-    </Router>
+    </div>
   );
 }

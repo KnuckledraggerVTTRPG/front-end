@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Durian';
+  src: url(fonts/Durian.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Chlorinar';
+  src: url(fonts/Chlorinar.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'HighwayToHell';
+  src: url(fonts/HighwayToHell.otf) format("opentype"); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.root-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+
+.center {
+  text-align: center; }
+
+.heading-1 {
+  font-family: "HighwayToHell", sans-serif;
+  font-size: 4rem; }
+
+.heading-2 {
+  font-family: "HighwayToHell", sans-serif;
+  font-size: 2rem; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+  .nav--item {
+    grid-column: 1fr; }
+
+.logo-1 {
+  grid-area: 1 / 1 / 3 / 3;
+  outline: 1px solid orangered; }
