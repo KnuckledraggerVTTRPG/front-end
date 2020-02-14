@@ -4,10 +4,47 @@
 
 .heading-1 {
   font-family: $font-header;
-  font-size: 4rem;
+  font-size: 3.2rem;
+  text-shadow: 0px 0px 10px $color-mudhut;
+
+  &:hover &--small {
+    transform: translateY(0) scale(1);
+  }
+  &--small {
+    display: block;
+    font-size: 1.6rem;
+    transform: translateY(-2.5rem) scale(0);
+    transition: all 1s;
+  }
 }
 
 .heading-2 {
   font-family: $font-header;
   font-size: 2rem;
+  &--hover--rock-salt {
+    color: $color-rock-salt;
+    text-shadow: 0px 0px 15px $color-inktongue;
+    transition: all 1s;
+    &:hover {
+      color: lighten($color-rock-salt, 20%);
+      transform: scale(1.05);
+      text-shadow: 20px 0px 0px $color-inktongue;
+    }
+  }
+}
+
+.text-color-inktongue {
+  color: $color-inktongue;
+}
+
+.text-color-claw {
+  color: $color-claw;
+}
+
+.text-color-mudhut {
+  color: $color-mudhut;
+}
+
+.text-color-rock-salt {
+  color: $color-rock-salt;
 }

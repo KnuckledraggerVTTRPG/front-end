@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import App from './App';
 import Store from './store';
 import 'normalize.css';
-import './main.css';
 
 const storeInstance = Store();
 

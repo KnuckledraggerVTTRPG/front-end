@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Durian';
+  src: url(fonts/Durian.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chlorinar';
+  src: url(fonts/Chlorinar.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'HighwayToHell';
+  src: url(fonts/HighwayToHell.otf) format('opentype');
+}
+
 $font-primary: 'Durian', sans-serif;
 $font-header: 'HighwayToHell', sans-serif;
 $font-caption: 'Chlorinar', sans-serif;

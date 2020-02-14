@@ -1,0 +1,14 @@
+.root-container {
+  background-color: $color-scrapmetal;
+  padding: 3rem;
+}
+
+.inner-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: $color-claw;
+  border: 0.1rem solid $color-inktongue;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 50px $color-inktongue;
+  grid-row-gap: 8em;
+}
