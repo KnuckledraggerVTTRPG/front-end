@@ -1,20 +1,31 @@
 .features {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-columns: minmax(20rem, 1fr) minmax(20rem, 1fr);
   grid-column: 1 / -1;
 
   &__image-box {
     grid-column: 2 / 2;
+    padding: 0.5rem 1rem;
   }
   &__image {
     display: block;
     max-width: 100%;
     height: auto;
+    box-shadow: 0 0 1.5rem black;
+    transform: skew(-0.7deg, -0.1deg) scale(1) translate(0);
+    transition: all 1s;
+
+    &:hover {
+      transform: skew(-1.1deg, -0.31deg) scale(1.005) translateY(-0.3rem);
+    }
   }
   &__text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 1 / 1;
     padding: 3rem 2rem;
-    font-size: 1.3rem;
-    // text-shadow: 0 0 5px $color-frostbite;
+    font-size: $font-size-primary;
+    text-shadow: 0 0 0.4rem lighten($color-frostbite, 30%);
   }
 }

@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
+  grid-template-columns: minmax(20rem, 1fr) repeat(2, 1fr);
   grid-template-rows: 30% 70%;
 
   grid-column: 1 / -1;
@@ -27,6 +27,6 @@
     grid-row: 2 / 2;
     padding: 0 2rem;
     font-size: 1.3rem;
-    // text-shadow: 0 0 1px $color-frostbite;
+    text-shadow: 0 0 0.15rem $color-dryblood;
   }
 }

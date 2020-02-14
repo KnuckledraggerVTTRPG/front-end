@@ -1,5 +1,9 @@
 .root-container {
-  background-color: $color-scrapmetal;
+  background-image: linear-gradient(
+    to right bottom,
+    lighten($color-scrapmetal, 25%),
+    darken($color-scrapmetal, 25%)
+  );
   padding: 3rem;
 }
 
@@ -7,8 +11,13 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background-color: $color-claw;
-  border: 0.1rem solid $color-inktongue;
+  background-image: linear-gradient(
+    to left top,
+    lighten($color-claw, 4%),
+    darken($color-claw, 9%)
+  );
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 50px $color-inktongue;
-  grid-row-gap: 8em;
+  box-shadow: 0 0 5rem $color-inktongue;
+  grid-row-gap: 4rem;
+  overflow: hidden;
 }

@@ -29,26 +29,18 @@ body {
 .heading-1 {
   font-family: "HighwayToHell", sans-serif;
   font-size: 3.2rem;
-  text-shadow: 0px 0px 10px #754a1f; }
-  .heading-1:hover .heading-1--small {
+  text-shadow: 0px 0px 1.1rem #754a1f; }
+  .heading-1--hover:hover .heading-1--hover--small {
     transform: translateY(0) scale(1); }
-  .heading-1--small {
+  .heading-1--hover--small {
     display: block;
     font-size: 1.6rem;
     transform: translateY(-2.5rem) scale(0);
-    transition: all 1s; }
+    transition: all 1s ease-out; }
 
 .heading-2 {
   font-family: "HighwayToHell", sans-serif;
   font-size: 2rem; }
-  .heading-2--hover--rock-salt {
-    color: #bdac99;
-    text-shadow: 0px 0px 15px #0e202a;
-    transition: all 1s; }
-    .heading-2--hover--rock-salt:hover {
-      color: #e5ded7;
-      transform: scale(1.05);
-      text-shadow: 20px 0px 0px #0e202a; }
 
 .text-color-inktongue {
   color: #0e202a; }
@@ -63,41 +55,55 @@ body {
   color: #bdac99; }
 
 .margin-top-big {
-  margin-top: 4em; }
+  margin-top: 4rem; }
 
 .margin-top-medium {
-  margin-top: 2em; }
+  margin-top: 2rem; }
 
 .margin-top-small {
-  margin-top: 1em; }
+  margin-top: 1rem; }
 
 .root-container {
-  background-color: #6e6d6b;
+  background-image: linear-gradient(to right bottom, #adadab, #2d2d2c);
   padding: 3rem; }
 
 .inner-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background-color: #f9dfcd;
-  border: 0.1rem solid #0e202a;
+  background-image: linear-gradient(to left top, #fbebdf, #f4c5a4);
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 50px #0e202a;
-  grid-row-gap: 8em; }
+  box-shadow: 0 0 5rem #0e202a;
+  grid-row-gap: 4rem;
+  overflow: hidden; }
 
 .nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  background-color: #6e6d6b; }
+  background-image: linear-gradient(to left bottom, #adadab, #2d2d2c); }
   .nav--item {
     grid-column: 1fr;
     margin-bottom: 0.3rem;
-    box-shadow: 0px 5px 6px #0e202a;
+    box-shadow: 0 0.5rem 0.6rem #0e202a;
     padding-bottom: 0.3rem;
-    padding-top: 0.3rem; }
+    padding-top: 0.3rem;
+    text-align: center; }
+  .nav__link {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: "HighwayToHell", sans-serif; }
+    .nav__link--hover--rock-salt {
+      color: #bdac99;
+      text-shadow: 0 0 1.5rem #0e202a;
+      transition: all 1s ease-out; }
+      .nav__link--hover--rock-salt:hover {
+        color: #e5ded7;
+        transform: scale(1.05);
+        text-shadow: 2rem 0 0 #0e202a; }
 
 .header {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) repeat(2, 1fr);
+  grid-template-columns: minmax(20rem, 1fr) repeat(2, 1fr);
   grid-template-rows: 30% 70%;
   grid-column: 1 / -1; }
   .header__logo-1 {
@@ -115,19 +121,30 @@ body {
     grid-column: 2 / span 2;
     grid-row: 2 / 2;
     padding: 0 2rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    text-shadow: 0 0 0.15rem #390d0a; }
 
 .features {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-columns: minmax(20rem, 1fr) minmax(20rem, 1fr);
   grid-column: 1 / -1; }
   .features__image-box {
-    grid-column: 2 / 2; }
+    grid-column: 2 / 2;
+    padding: 0.5rem 1rem; }
   .features__image {
     display: block;
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    box-shadow: 0 0 1.5rem black;
+    transform: skew(-0.7deg, -0.1deg) scale(1) translate(0);
+    transition: all 1s; }
+    .features__image:hover {
+      transform: skew(-1.1deg, -0.31deg) scale(1.005) translateY(-0.3rem); }
   .features__text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 1 / 1;
     padding: 3rem 2rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    text-shadow: 0 0 0.4rem #85a8bf; }
