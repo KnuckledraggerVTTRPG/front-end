@@ -20,9 +20,18 @@
 html {
   box-sizing: border-box;
   font-size: 50%; }
-  @media only screen and (min-width: 300px) {
+  @media only screen and (min-width: 650px) {
     html {
-      font-size: 50%; } }
+      font-size: 62.5%; } }
+  @media only screen and (min-width: 1000px) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (min-width: 1150px) {
+    html {
+      font-size: 80%; } }
+  @media only screen and (min-width: 1400px) {
+    html {
+      font-size: 90%; } }
 
 body {
   font-family: "Durian", sans-serif; }
@@ -34,6 +43,12 @@ body {
   font-family: "HighwayToHell", sans-serif;
   font-size: 2.2rem;
   text-shadow: 0 0 1.1rem #754a1f; }
+  @media only screen and (min-width: 719px) {
+    .heading-1 {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .heading-1 {
+      font-size: 3.8rem; } }
   .heading-1--hover:hover .heading-1--hover--small {
     transform: translateY(0) scale(1); }
   .heading-1--hover--small {
@@ -86,7 +101,7 @@ body {
   background-image: linear-gradient(to left top, #fbebdf, #f4c5a4);
   border-radius: 0.5rem;
   box-shadow: 0 0 5rem #0e202a;
-  grid-row-gap: 0rem;
+  grid-row-gap: 2.5rem;
   overflow: hidden; }
 
 .nav {
@@ -115,9 +130,9 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr auto;
   grid-column: 1 / -1; }
-  @media only screen and (min-width: 650px) {
+  @media only screen and (min-width: 450px) {
     .header {
       grid-template-columns: 0.5fr 1fr;
       grid-template-rows: none; } }
@@ -128,7 +143,7 @@ body {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
     object-fit: contain; }
-    @media only screen and (min-width: 650px) {
+    @media only screen and (min-width: 450px) {
       .header__logo {
         grid-row: auto; } }
     .header__logo-img {
@@ -141,8 +156,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem; }
-    @media only screen and (min-width: 650px) {
+    padding: 3rem 2rem; }
+    @media only screen and (min-width: 450px) {
       .header__heading-container {
         grid-column: 2 / 2;
         grid-row: auto; } }
@@ -150,7 +165,7 @@ body {
 .features {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr auto;
   grid-column: 1 / -1; }
   @media only screen and (min-width: 650px) {
     .features {

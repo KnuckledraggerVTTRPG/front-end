@@ -5,12 +5,12 @@
 .heading-1 {
   font-family: $font-header;
   font-size: 2.2rem;
-  // @media only screen and (min-width: 650px) {
-  //   font-size: 2.8rem;
-  // }
-  // @media only screen and (min-width: 900px) {
-  //   font-size: 3rem;
-  // }
+  @media only screen and (min-width: 719px) {
+    font-size: 3rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 3.8rem;
+  }
   text-shadow: 0 0 1.1rem $color-mudhut;
 
   &--hover {
