@@ -42,7 +42,7 @@ body {
 .heading-1 {
   font-family: "HighwayToHell", sans-serif;
   font-size: 2.2rem;
-  text-shadow: 0 0 1.1rem #754a1f; }
+  text-shadow: 0 0 1.1rem #390d0a; }
   @media only screen and (min-width: 719px) {
     .heading-1 {
       font-size: 3rem; } }
@@ -63,11 +63,11 @@ body {
 
 .text-shadow-primary-blood {
   font-size: 1.3rem;
-  text-shadow: 0 0 0.15rem #390d0a; }
+  text-shadow: 0 0 0.4rem #390d0a; }
 
 .text-shadow-primary-frost {
   font-size: 1.3rem;
-  text-shadow: 0 0 0.4rem #85a8bf; }
+  text-shadow: 0 0 0.4rem #3b5b70; }
 
 .text-color-inktongue {
   color: #0e202a; }
@@ -97,8 +97,7 @@ body {
 .inner-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background-color: #f9dfcd;
-  background-image: linear-gradient(to left top, #fbebdf, #f4c5a4);
+  background-image: linear-gradient(to left top, #ddd0b4, #c9b386);
   border-radius: 0.5rem;
   box-shadow: 0 0 5rem #0e202a;
   grid-row-gap: 2.5rem;

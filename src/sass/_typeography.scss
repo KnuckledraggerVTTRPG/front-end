@@ -11,7 +11,7 @@
   @media only screen and (min-width: 1200px) {
     font-size: 3.8rem;
   }
-  text-shadow: 0 0 1.1rem $color-mudhut;
+  text-shadow: 0 0 1.1rem $color-dryblood;
 
   &--hover {
     &:hover &--small {
@@ -33,12 +33,12 @@
 
 .text-shadow-primary-blood {
   font-size: $font-size-primary;
-  text-shadow: 0 0 0.15rem $color-dryblood;
+  text-shadow: 0 0 0.4rem $color-dryblood;
 }
 
 .text-shadow-primary-frost {
   font-size: $font-size-primary;
-  text-shadow: 0 0 0.4rem lighten($color-frostbite, 30%);
+  text-shadow: 0 0 0.4rem $color-frostbite;
 }
 
 .text-color-inktongue {

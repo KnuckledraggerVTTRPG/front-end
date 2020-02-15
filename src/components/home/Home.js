@@ -5,25 +5,25 @@ export default function Home() {
     <div className="root-container">
       <div className="inner-container">
         <header className="header">
-          <div className="header__logo text-color-inktongue">
+          <div className="header__logo">
             <img
               className="header__logo-img"
-              src="img/knuckledragger_logo.jpg"
+              src="img/knuckledragger_logo.png"
               alt="Logo"
             />
           </div>
           <div className="header__heading-container">
             <div className="header__heading-container-text-container">
-              <h1 className="heading-1 heading-1--hover center">
-                KnuckledraggerRPG
+              <h1 className="heading-1 heading-1--hover center text-color-inktongue">
+                Knuckledragger
                 <small className="heading-1 heading-1--hover--small text-color-inktongue">
                   Welcome to Planet
                 </small>
               </h1>
-              <p className="text-shadow-primary-blood">
+              <p className="text-shadow-primary-blood text-color-inktongue">
                 Tabletop B-RPG with simplicity in mind
               </p>
-              <p className="text-shadow-primary-blood margin-top-small">
+              <p className="text-shadow-primary-blood margin-top-small text-color-inktongue">
                 For an android with no feelings, he sure managed to evoke them
                 in others. Worf, It's better than music. It's jazz. and attack
                 the Romulans. A lot of things can change in twelve years,
@@ -40,7 +40,7 @@ export default function Home() {
         </header>
         <section className="features">
           <div className="features__text-box">
-            <p className="text-shadow-primary-frost">
+            <p className="text-shadow-primary-blood text-color-inktongue">
               Play, create and host... Yesterday I did not know how to eat gagh.
               I'll be sure to note that in my log. Damage report! Not if I
               weaken first. Smooth as an android's bottom, eh, Data? I am your
@@ -52,7 +52,7 @@ export default function Home() {
               here; the observation lounge has turned into a swamp.
             </p>
           </div>
-          <div className="features__image-box">
+          <div className="features__image-box text-color-inktongue">
             <img
               className="features__image-box--image"
               src="img/promo_img_1.png"

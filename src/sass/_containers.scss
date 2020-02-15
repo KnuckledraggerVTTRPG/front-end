@@ -10,11 +10,10 @@
 .inner-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background-color: $color-claw;
   background-image: linear-gradient(
     to left top,
-    lighten($color-claw, 4%),
-    darken($color-claw, 9%)
+    lighten($color-polished-bone, 4%),
+    darken($color-polished-bone, 9%)
   );
   border-radius: 0.5rem;
   box-shadow: 0 0 5rem $color-inktongue;
