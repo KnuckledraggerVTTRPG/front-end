@@ -15,12 +15,16 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  font-family: inherit; }
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 50%; }
+  @media only screen and (min-width: 300px) {
+    html {
+      font-size: 50%; } }
 
 body {
-  font-size: 62.5%;
-  box-sizing: border-box;
   font-family: "Durian", sans-serif; }
 
 .center {
@@ -28,8 +32,8 @@ body {
 
 .heading-1 {
   font-family: "HighwayToHell", sans-serif;
-  font-size: 3.2rem;
-  text-shadow: 0px 0px 1.1rem #754a1f; }
+  font-size: 2.2rem;
+  text-shadow: 0 0 1.1rem #754a1f; }
   .heading-1--hover:hover .heading-1--hover--small {
     transform: translateY(0) scale(1); }
   .heading-1--hover--small {
@@ -41,6 +45,14 @@ body {
 .heading-2 {
   font-family: "HighwayToHell", sans-serif;
   font-size: 2rem; }
+
+.text-shadow-primary-blood {
+  font-size: 1.3rem;
+  text-shadow: 0 0 0.15rem #390d0a; }
+
+.text-shadow-primary-frost {
+  font-size: 1.3rem;
+  text-shadow: 0 0 0.4rem #85a8bf; }
 
 .text-color-inktongue {
   color: #0e202a; }
@@ -74,7 +86,7 @@ body {
   background-image: linear-gradient(to left top, #fbebdf, #f4c5a4);
   border-radius: 0.5rem;
   box-shadow: 0 0 5rem #0e202a;
-  grid-row-gap: 4rem;
+  grid-row-gap: 0rem;
   overflow: hidden; }
 
 .nav {
@@ -82,7 +94,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   background-image: linear-gradient(to left bottom, #adadab, #2d2d2c); }
   .nav--item {
-    grid-column: 1fr;
     margin-bottom: 0.3rem;
     box-shadow: 0 0.5rem 0.6rem #0e202a;
     padding-bottom: 0.3rem;
@@ -103,48 +114,76 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: minmax(20rem, 1fr) repeat(2, 1fr);
-  grid-template-rows: 30% 70%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / -1; }
-  .header__logo-1 {
+  @media only screen and (min-width: 650px) {
+    .header {
+      grid-template-columns: 0.5fr 1fr;
+      grid-template-rows: none; } }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 1 / 1;
-    grid-row: 1 / span 2;
+    grid-row: 1 / 1;
     object-fit: contain; }
-  .header__logo-img {
-    display: block;
-    max-width: 100%;
-    height: auto; }
-  .header__heading {
-    grid-column: 2 / span 2;
-    grid-row: 1 / 1; }
-  .header__text-box {
-    grid-column: 2 / span 2;
+    @media only screen and (min-width: 650px) {
+      .header__logo {
+        grid-row: auto; } }
+    .header__logo-img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+  .header__heading-container {
+    grid-column: 1 / 1;
     grid-row: 2 / 2;
-    padding: 0 2rem;
-    font-size: 1.3rem;
-    text-shadow: 0 0 0.15rem #390d0a; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem; }
+    @media only screen and (min-width: 650px) {
+      .header__heading-container {
+        grid-column: 2 / 2;
+        grid-row: auto; } }
 
 .features {
   display: grid;
-  grid-template-columns: minmax(20rem, 1fr) minmax(20rem, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / -1; }
+  @media only screen and (min-width: 650px) {
+    .features {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: none; } }
   .features__image-box {
-    grid-column: 2 / 2;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem; }
-  .features__image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 0 1.5rem black;
-    transform: skew(-0.7deg, -0.1deg) scale(1) translate(0);
-    transition: all 1s; }
-    .features__image:hover {
-      transform: skew(-1.1deg, -0.31deg) scale(1.005) translateY(-0.3rem); }
+    @media only screen and (min-width: 650px) {
+      .features__image-box {
+        grid-column: 2 / 2;
+        grid-row: auto; } }
+    .features__image-box--image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 1.5rem black;
+      transform: skew(-0.7deg, -0.1deg) scale(1) translate(0);
+      transition: all 1s; }
+      .features__image-box--image:hover {
+        transform: skew(-1.1deg, -0.31deg) scale(1.005) translateY(-0.3rem); }
   .features__text-box {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 1 / 1;
-    padding: 3rem 2rem;
-    font-size: 1.3rem;
-    text-shadow: 0 0 0.4rem #85a8bf; }
+    grid-row: 2 / 2;
+    padding: 3rem 2rem; }
+    @media only screen and (min-width: 650px) {
+      .features__text-box {
+        grid-column: 1 / 1;
+        grid-row: auto; } }

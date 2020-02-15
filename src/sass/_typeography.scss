@@ -4,8 +4,14 @@
 
 .heading-1 {
   font-family: $font-header;
-  font-size: 3.2rem;
-  text-shadow: 0px 0px 1.1rem $color-mudhut;
+  font-size: 2.2rem;
+  // @media only screen and (min-width: 650px) {
+  //   font-size: 2.8rem;
+  // }
+  // @media only screen and (min-width: 900px) {
+  //   font-size: 3rem;
+  // }
+  text-shadow: 0 0 1.1rem $color-mudhut;
 
   &--hover {
     &:hover &--small {
@@ -23,6 +29,16 @@
 .heading-2 {
   font-family: $font-header;
   font-size: 2rem;
+}
+
+.text-shadow-primary-blood {
+  font-size: $font-size-primary;
+  text-shadow: 0 0 0.15rem $color-dryblood;
+}
+
+.text-shadow-primary-frost {
+  font-size: $font-size-primary;
+  text-shadow: 0 0 0.4rem lighten($color-frostbite, 30%);
 }
 
 .text-color-inktongue {

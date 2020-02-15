@@ -7,3 +7,9 @@
 .margin-top-small {
   margin-top: 1rem;
 }
+
+@mixin flexCenterCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
