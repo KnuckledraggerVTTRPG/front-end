@@ -6,6 +6,7 @@
   grid-template-rows: 1fr 1fr;
   @media only screen and (min-width: 650px) {
     grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
   }
 
   &__container {
@@ -57,30 +58,15 @@
 .features-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  // grid-template-rows: 1fr auto;
-  // @media only screen and (min-width: 650px) {
-  //   grid-template-columns: repeat(2, 1fr);
-  //   grid-template-rows: none;
-  // }
 
   grid-column: 1 / -1;
 
   &__text-box {
-    // @include flexCenterCenter;
-    // grid-column: 1 / 1;
-    // grid-row: 2 / 2;
-    // @media only screen and (min-width: 650px) {
-    //   grid-column: 1 / 1;
-    //   grid-row: auto;
-    // }
     padding: 3rem 2rem;
   }
 
   &__ul {
     padding: 0.5rem 2.5rem;
-  }
-
-  &_li {
   }
 }
 
