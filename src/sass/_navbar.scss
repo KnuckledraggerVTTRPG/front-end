@@ -1,6 +1,10 @@
 .nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  grid-template-columns: 1fr;
+  @media only screen and (min-width: 750px) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
   background-image: linear-gradient(
     to left bottom,
     lighten($color-scrapmetal, 25%),
